@@ -36,26 +36,6 @@ to update it.
 | `certificates.ts` | Certificates                                   |
 | `navigation.ts`   | Nav items (order defines the section order)    |
 
-## Things to fill in
-
-These are deliberately left unset rather than invented:
-
-- **Profile photo** — `public/profile.png` (1023x1537, 1.7 MB). To swap it,
-  replace that file or point `personal.photo.src` at a new one. Set `src` to
-  `null` to show the "NB" monogram instead.
-- **Resume PDF** — `public/resume.pdf` is in place and wired to the Resume
-  links via `personal.resumeUrl`.
-- **Project links** — every project has `github: null` and `live: null`. Set a
-  URL to turn on the "Source" / "Live" buttons in the project modal.
-- **Certificate credential** — `certificates[0].url` is `null`; set it to show a
-  "View credential" link.
-- **Contact form delivery** — there is no mail backend. Submitting opens the
-  visitor's own mail client via `mailto:`, and the form says so. To use a
-  provider later, replace `handleSubmit` in
-  `src/components/ui/ContactForm.tsx` with a `fetch` to your endpoint.
-- **Open Graph image** — no image is referenced. Add one to `public/` and an
-  `og:image` meta tag in `index.html` if you want link previews.
-
 ## Structure
 
 ```text
